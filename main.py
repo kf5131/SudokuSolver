@@ -1,6 +1,5 @@
 
 
-
 test_board = [
     [7,8,0,4,0,0,1,2,0],
     [6,0,0,0,7,5,0,0,9],
@@ -28,6 +27,16 @@ def print_board(board):
                 print(str(board[i][j]) + " ", end="")
                 
                 
+def find_empty(board):
+    for i in range(len(board)):
+        for j in range(len(board[0])):
+            if board[i][j] == 0:
+                return (i, j)
+    return None
+
+
+
+
 
 if __name__ == "__main__":
     print_board(test_board)
