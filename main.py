@@ -77,7 +77,7 @@ def solve(board):
 def main():
     print_board(test_board)
     solve(test_board)
-    print("____________________")
+    print("_________________________")
     print_board(test_board)
 
 
